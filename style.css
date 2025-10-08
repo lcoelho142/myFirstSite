@@ -21,10 +21,8 @@ html, body {
 
 .child-container {
   background-color: #c0f9ed;
-  border-radius: 50px;
-  border: 1px solid red;
   padding: 2rem;
   width: 90%;            /* or use max-width if you want responsive */
   height: auto;
-  transition: all 0.3s ease-in-out;
+  border-radius: 20px;
 }
