@@ -1,0 +1,30 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+  width: 100%;
+  background-color: #e1e3eb;
+}
+
+.parent-container {
+  display: flex;
+  justify-content: center;  /* horizontal center */
+  align-items: center;      /* vertical center */
+  width: 100vw;
+  height: 100vh;
+  position: relative; /* or fixed if you want it stuck to viewport */
+}
+
+.child-container {
+  background-color: #c0f9ed;
+  border-radius: 50px;
+  border: 1px solid red;
+  padding: 2rem;
+  width: 90%;            /* or use max-width if you want responsive */
+  height: auto;
+  transition: all 0.3s ease-in-out;
+}
