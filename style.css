@@ -2,7 +2,7 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  outline: 1px red dotted;
+  /* outline: 1px red dotted; */
 }
 
 html {
@@ -346,7 +346,92 @@ body {
   max-width: 100%;
   height: 100%;
   object-fit: cover;
+  border-radius: 20px;
 }
+
+.color-palette {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    height: auto;
+    padding: 0 1em;
+    margin-bottom: 2em;
+}
+
+.palette-container {
+    flex-grow: 1;
+    align-items: center;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+.palette-container ul {
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    gap: 1.5em;
+    text-decoration: none;
+}
+
+.palette-container ul li {
+    flex-grow: 1;
+    flex-basis: 150px;
+    flex-shrink: 1;
+    font-size: 1em;
+    font-weight: 500;
+
+    padding: 1em 1.5em;
+    border-radius: 4px;
+    text-align: center;
+}
+
+/* color palette colors below */
+
+.proj1-color1 {
+    color: #fefbf7;
+    background-color: #632C77;
+}
+
+.proj1-color2 {
+    color: #fefbf7;
+    background-color: #30429A;
+}
+
+.proj1-color3 {
+    color: #fefbf7;
+    background-color: #269B48;
+}
+
+.proj1-color4 {
+    color: #fefbf7;
+    background-color: #7597CE;
+}
+
+.proj1-color5 {
+    color: #fefbf7;
+    background-color: #CF5E98;
+}
+
+.proj1-color6 {
+    color: #fefbf7;
+    background-color: #F2703E;
+}
+
+.proj1-color7 {
+    color: #161616;
+    background-color: #FFCD5B;
+}
+
+.proj1-color8 {
+    color: #161616;
+    background-color: #FFFFFF;
+}
+
 
 /* Mobile View CSS Below */
 @media (max-width: 768px) {
