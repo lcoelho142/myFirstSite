@@ -1,58 +1,340 @@
-/* * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-html, body {
-  height: 100%;
-  width: 100%;
-  background-color: #e1e3eb;
-}
-
-.parent-container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 100vw;
-  height: 100vh;
-  position: relative; 
-}
-
-.child-container {
-  background-color: #c0f9ed;
-  padding: 2rem;
-  width: 90%;       
-  height: auto;
-  border-radius: 20px;
-} 
-*/
 * {
     box-sizing: border-box;
-}
-
-body {
     margin: 0;
-    background-color: green;
-
+    padding: 0;
+    /* outline: 1px red dotted; */
 }
 
-.parent-container {
-    background-color: pink;
+header {
+    overflow: visible;
+}
+
+
+/* Nav Bar CSS Below */
+nav {
+    background-color: #161616;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    height: auto;
+    padding: 30px 50px 20px;
+    text-align: center;
+    position: fixed;
+    box-shadow: 0 3px 10px 0 rgba(0,0,0,.60);
+    width: 100%;
+    left: 0;
+    top: 0;
+}
+
+
+nav .logo {
+    color: #FEFBF7;
+    font-family: "Outfit", sans-serif;
+    font-size: 2rem;
+    letter-spacing: 0.05em;
+    align-content: center;
+    line-height: 1em;
+    margin-right: 1.5em;
+}
+
+nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    align-items: center;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    gap: 1.5em;
+}
+
+nav ul li {
+    gap: 50px;
+}
+
+nav ul li a {
+    color: #FEFBF7;
+    text-decoration: none;
+    font-size: 1em;
+    font-weight: 500;
+}
+
+nav ul li a:hover {
+    color:#dbf985;
+}
+
+
+/* Body CSS Below */
+body {
+    background-color: #FEFBF7;
+    color:#161616;
+    font-family: "inter", sans-serif;
+    letter-spacing: .1em;
     width: 100%;
     height: 100vh;
+    min-height: 100vh;
+    margin: 0 auto;
+}
+
+.site-container {
+    display: flexbox;
+}
+
+
+/* Hero CSS Below */
+.hero-title,
+.gallery-title {
+    font-size: 3rem;
+    color: #7b3b53;
+}
+
+.home {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 3em;
+    margin-top: 80px;
+}
+
+.home-container {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5em;
+}
+
+.button {
+    margin-top: 1.5em;
+    padding: .5em 1em;
+    border: 1.5px solid #7b3b53;
+    border-radius: .5em;
+    background-color:#FEFBF7;
+    color:#7b3b53;
+    font-weight: 700;
+    text-decoration: none;
+}
+
+.button:hover {
+    color: #FEFBF7;
+    background-color: #7b3b53;
+}
+
+
+/* About CSS Below */
+.about {
+    background-color: #7b3b53;
+    padding: 3em;
+}
+
+.about-container {
+    display: flex;
+    align-items: stretch;
+}
+
+.about-container .left,
+.about-container .right {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     padding: 2em;
 }
 
-p {
-    margin: 0;
-    padding: 1em;
-    background-color: red;
-
+.about-container .left img {
+    max-width: 100%;
+    height: auto;
+    display: block;
 }
 
-.child-container {
-    background-color: lightskyblue;
-    width: 100%;
-    height: 100%;
+.about-container .left {
+    background-color:#5ebea4;
+}
+
+.about-container .right {
+    background-color: #FEFBF7;
+    flex-direction: column;
+    text-align: left;
+}
+
+.about-container .right h5,
+.about-container .right p {
+    max-width: 400px;
+    margin-inline: auto;
+}
+
+.about-container .right h2,
+.about-container .right h5 {
+    margin-bottom: 1em;
+}
+
+
+/* Work CSS Below */
+.work {
+    align-items: center;
+    text-align: center;
+    color: #7b3b53;
+    padding: 3em;
+}
+
+.work-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.gallery-title {
+    margin-bottom: 1em;
+}
+
+.project {
+    display: flex;
+    display: block;
+    justify-content: space-between;
+    text-align: center;
+    flex: 1;
+    flex-grow: 1;
+}
+
+.project-text {
+    padding: 2em 0;
+    max-width: 350px;
+    margin: auto;
+}
+
+.project-text h5 {
+    margin-top: 1em;
+    min-height: 4.5em;
+}
+
+.project-text h3 a {
+    color: #161616;
+    text-decoration: none;
+}
+
+.project-text h3 a:hover {
+    color:#5ebea4;
+}
+
+.skill-tag {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: .5em;
+    max-width: 350px;
+    margin: auto;
+}
+
+.skill-tag p {
+    background-color:#161616;
+    color: #FEFBF7;
+    display: flex;
+    justify-content: center;
+    padding: .5em 1em;
+    align-items: center;
+    font-size: small;
+}
+
+
+/* Call-to-Action CSS Below */
+.action {
+    align-items: center;
+    text-align: center;
+    background-color: #5ebea4;
+    padding: 3em;
+    display: flex;
+    flex-direction: column;
+}
+
+.action a.button {
+    background-color: #5ebea4;
+    color: #FEFBF7;
+    border: 1px solid #FEFBF7;
+}
+
+.action a.button:hover {
+    background-color: #FEFBF7;
+    color: #5ebea4;
+}
+
+.highlight-lime {
+    color:#dbf985;
+}
+
+.highlight-white {
+    color:#FEFBF7;
+}
+
+.highlight-red {
+    color:#7b3b53;
+    font-size:xx-large;
+}
+
+
+/* Footer CSS Below */
+.footer {
+    color:#FEFBF7;
+    background-color:#161616;
+    padding: 3em;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-contact,
+.footer-socials {
+    flex: 1;
+}
+
+.footer-contact h2,
+.footer-contact h4,
+.footer-socials h2,
+.footer-socials h4 {
+    margin-bottom: 1em;
+}
+
+.footer-container figure img {
+    max-width: 100%;
+    height: auto;
+    flex: 1;
+}
+
+.copywriting {
+    display: block;
+    margin-top: 1em;
+}
+
+
+/* Mobile View CSS Below */
+@media (max-width: 768px) {
+
+    .work-container {
+        flex-direction: column;
+        align-items: center;
+        gap: 40px;
+    }
+
+    .project {
+        width: 100%;
+        max-width: 400px;
+        flex: none;
+    }
+    div.about-container {
+        flex-direction: column;
+    }
+
+    .footer-container,
+    .copywriting {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .footer-contact,
+    .footer-socials {
+        margin-bottom: 1em;
+    }
+
 }
