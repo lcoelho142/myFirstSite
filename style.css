@@ -34,31 +34,31 @@ main {
 }
 
 .xxl {
-  font-size: xx-large;
+  font-size: 2.5rem;
 }
 
 .xl {
-  font-size: x-large;
+  font-size: 2rem;
 }
 
 .lg {
-  font-size: large;
+  font-size: 1.75rem;
 }
 
 .med {
-  font-size: medium;
+  font-size: 1.5rem;
 }
 
 .sm {
-  font-size: small;
+  font-size: 1.25rem;
 }
 
 .xs {
-  font-size: x-small;
+  font-size: 1rem;
 }
 
 .xxs {
-  font-size: xx-small;
+  font-size: 0.75rem;
 }
 
 /* ============================================================== */
@@ -80,13 +80,17 @@ nav {
 }
 
 nav .logo {
-  color: #fefbf7;
   font-family: "Outfit", sans-serif;
   font-size: 2rem;
   letter-spacing: 0.05em;
   align-content: center;
   line-height: 1em;
   margin-right: 1.5em;
+}
+
+.logo a {
+  color: #fefbf7;
+  text-decoration: none;
 }
 
 nav ul {
@@ -346,13 +350,22 @@ body {
 .footer-contact,
 .footer-socials {
   flex: 1;
+  display: flex;
+  flex-direction: column;
 }
 
 .footer-contact h2,
-.footer-contact h4,
+.footer-contact a,
 .footer-socials h2,
-.footer-socials h4 {
+.footer-socials a {
   margin-bottom: 1em;
+  text-decoration: none;
+  color: #fefbf7;
+}
+
+.footer-contact a:hover,
+.footer-socials a:hover {
+  color: #dbf985;
 }
 
 .footer-container figure img {
@@ -456,50 +469,6 @@ body {
 }
 
 /* ============================================================== */
-
-/* color palette colors below */
-
-.proj1-color1 {
-  color: #fefbf7;
-  background-color: #632c77;
-}
-
-.proj1-color2 {
-  color: #fefbf7;
-  background-color: #30429a;
-}
-
-.proj1-color3 {
-  color: #fefbf7;
-  background-color: #269b48;
-}
-
-.proj1-color4 {
-  color: #fefbf7;
-  background-color: #7597ce;
-}
-
-.proj1-color5 {
-  color: #fefbf7;
-  background-color: #cf5e98;
-}
-
-.proj1-color6 {
-  color: #fefbf7;
-  background-color: #f2703e;
-}
-
-.proj1-color7 {
-  color: #161616;
-  background-color: #ffcd5b;
-}
-
-.proj1-color8 {
-  color: #161616;
-  background-color: #ffffff;
-}
-
-/* ============================================================== */
 /* PROJECT ABOUT SECTION */
 
 section.proj-about {
@@ -559,6 +528,9 @@ section.proj-font > .proj-font-container {
 section.proj-font .proj-font-child-container {
   margin: 0;
   padding: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .proj-font-child-container:nth-of-type(1) > p.bold {
@@ -592,11 +564,6 @@ section.proj-font .proj-font-child-container:nth-of-type(2) {
 section.proj-font .proj-font-child-container h2,
 section.proj-font .proj-font-child-container h5 {
   margin-bottom: 1em;
-}
-
-div.proj-font-container {
-  max-width: 1000px;
-  margin: auto;
 }
 
 /* ============================================================== */
