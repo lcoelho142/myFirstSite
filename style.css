@@ -9,10 +9,6 @@ html {
   scroll-behavior: smooth;
 }
 
-header {
-  overflow: visible;
-}
-
 main {
   margin: 0;
   padding: 0;
@@ -68,10 +64,8 @@ nav {
   background-color: #161616;
   display: flex;
   justify-content: space-between;
-  flex-wrap: wrap;
-  height: auto;
+  align-items: center;
   padding: 30px 50px 20px;
-  text-align: center;
   position: fixed;
   box-shadow: 0 3px 10px 0 rgba(0, 0, 0, 0.6);
   width: 100%;
@@ -81,11 +75,8 @@ nav {
 
 nav .logo {
   font-family: "Outfit", sans-serif;
-  font-size: 2rem;
+  font-size: 1.5rem;
   letter-spacing: 0.05em;
-  align-content: center;
-  line-height: 1em;
-  margin-right: 1.5em;
 }
 
 .logo a {
@@ -95,18 +86,10 @@ nav .logo {
 
 nav ul {
   display: flex;
-  flex-wrap: wrap;
   list-style: none;
-  align-items: center;
-  text-align: center;
   margin: 0;
   padding: 0;
-  list-style: none;
   gap: 1.5em;
-}
-
-nav ul li {
-  gap: 50px;
 }
 
 nav ul li a {
@@ -120,14 +103,26 @@ nav ul li a:hover {
   color: #dbf985;
 }
 
+.menu-toggle {
+  display: none;
+  color: #fefbf7;
+  font-size: 1.8rem;
+  cursor: pointer;
+  position: absolute;
+  right: 20px;
+  top: 25px;
+}
+
+#menu-checkbox {
+  display: none;
+}
+
 /* ============================================================== */
 
 /* Home Page Styles Below */
 
 /* Body CSS Below */
 body {
-  background-color: #fefbf7;
-  color: #161616;
   font-family: "inter", sans-serif;
   letter-spacing: 0.1em;
   width: 100%;
@@ -413,7 +408,7 @@ body {
   flex-grow: 1;
   flex-shrink: 0;
   flex-basis: auto;
-  max-width: 100%;
+  width: auto;
   justify-content: center;
   align-items: center;
   margin: 0;
@@ -632,6 +627,42 @@ section.proj-font .proj-font-child-container h5 {
 
 /* Mobile View CSS Below */
 @media (max-width: 768px) {
+  nav {
+    padding-bottom: 40px;
+  }
+
+  nav .menu-toggle {
+    display: block;
+    cursor: pointer;
+    position: absolute;
+    top: 35px;
+    right: 20px;
+  }
+
+  .menu-toggle i {
+    display: block;
+  }
+
+  nav ul {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    background-color: #161616;
+    width: 100%;
+    padding: 15px 0;
+    gap: 1rem;
+    top: 90px;
+    left: 0;
+    text-align: center;
+    border-radius: 8px;
+    box-shadow: 0 2px 12px rgba(0, 0, 0, 0.5);
+    z-index: 9999;
+  }
+
+  #menu-checkbox:checked + .menu-toggle + ul {
+    display: flex;
+  }
+
   .work-container {
     flex-direction: column;
     align-items: center;

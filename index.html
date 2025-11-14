@@ -5,13 +5,18 @@
     <link href="style.css" rel="stylesheet" />
     <script src="index.js" defer></script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
   </head>
   <body>
     <div id="top"></div>
     <header>
       <nav>
         <div class="logo"><a href="#top">LEAH COELHO</a></div>
-        <ul>
+        <input type="checkbox" id="menu-checkbox">
+        <label for="menu-checkbox" class="menu-toggle">
+          <i class="fa-solid fa-bars fa-lg"></i>
+        </label>
+        <ul id="nav-links">
           <li><a href="#top">home</a></li>
           <li><a href="#about">about</a></li>
           <li><a href="#work">work</a></li>
