@@ -482,6 +482,7 @@ section.proj-about img {
   width: 100%;
   object-fit: cover;
   border-radius: 20px;
+  aspect-ratio: 1 / 1;
 }
 
 section.proj-about .proj-about-child-container {
