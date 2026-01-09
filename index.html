@@ -3,7 +3,7 @@
   <head>
     <title>Leah's Portfolio</title>
     <link href="style.css" rel="stylesheet" />
-    <script src="index.js" defer></script>
+    <script type="module" src="index.js" defer></script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link
       rel="stylesheet"
@@ -14,6 +14,17 @@
     />
   </head>
   <body>
+      <script>
+        if (!sessionStorage.getItem('hasSeenSplash')) {
+          document.documentElement.classList.add('show-loader')
+        }
+      </script>
+    <div id="loader">
+      <div style="text-align: center;">
+        <h1 style ="margin-bottom: 10px;">Leah Made This</h1>
+        <p style="opacity: 0.7; font-size: 0.9rem; letter-spacing: 1px;">SITE CURRENTLY IN PROGRESS • UPDATING DAILY</p>
+      </div>
+    </div>
     <div id="top"></div>
     <header>
       <nav>
@@ -71,6 +82,32 @@
       <section id="work" class="work">
         <h1 class="gallery-title">THE PROJECT GALLERY</h1>
         <div class="work-container">
+          <section class="project">
+            <figure>
+              <a href="./pages/project-four.html">
+                <img
+                  src="./photos/project-four/screenCollection.svg"
+                  alt="Description"
+                  width="291"
+                  height="196"
+                />
+              </a>
+            </figure>
+            <div class="project-text">
+              <h3>
+                <a href="./pages/project-four.html">Weather Web App</a>
+              </h3>
+              <h5>
+                A cozy, Web Application using OpenWeather API and built with vanilla HTML5, CSS, & JavaScript.
+              </h5>
+            </div>
+            <div class="skill-tag">
+              <p>Front-End Development</p>
+              <p>UI/UX Design</p>
+              <p>Web Development</p>
+              <p>Digital Illustration</p>
+            </div>
+          </section>
           <section class="project">
             <figure>
               <a href="./pages/project-one.html">
