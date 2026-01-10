@@ -97,15 +97,9 @@ nav {
   top: 0;
 }
 
-nav .logo {
-  font-family: "Outfit", sans-serif;
-  font-size: 1.5rem;
-  letter-spacing: 0.05em;
-}
-
-.logo a {
-  color: #fefbf7;
-  text-decoration: none;
+.logo img {
+  width: auto;
+  display: block;
 }
 
 nav ul {
