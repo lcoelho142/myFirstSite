@@ -1,0 +1,39 @@
+section.weather-about {
+    background-color: #0072a7;
+}
+
+.white-text {
+    color: #f6f6f6;
+}
+
+.opacity-half {
+    opacity: .5;
+}
+
+.yellow-text {
+    color: #ffc532;
+}
+
+section.yellow-background {
+    background-color: #ffc532;
+}
+
+.light-blue-text {
+    color: #dcf6fa;
+}
+
+h1.blue-accent,
+span.blue-accent {
+    color: #0072a7;
+}
+
+a.btn-style {
+    background-color: #ffc532;
+    color: #fefbf7;
+    border: 1px solid #fefbf7;
+}
+
+a.btn-style:hover {
+    background-color: #fefbf7;
+    color: #5ebea4;
+}
